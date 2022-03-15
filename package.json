@@ -1,5 +1,5 @@
 {
-  "name": "xcode-bulid-github-action",
+  "name": "unity-get-version-github-action",
   "version": "0.1",
   "description": "",
   "main": "dist/index.js",
@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akiojin/xcode-bulid-github-action.git"
+    "url": "git+https://github.com/akiojin/unity-get-version-github-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akiojin/xcode-bulid-github-action/issues"
+    "url": "https://github.com/akiojin/unity-get-version-github-action/issues"
   },
-  "homepage": "https://github.com/akiojin/xcode-bulid-github-action#readme",
+  "homepage": "https://github.com/akiojin/unity-get-version-github-action#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0"
+    "@actions/core": "^1.6.0",
+    "unity-command": "^0.1.4"
   },
   "devDependencies": {
     "@types/node": "^17.0.21"
