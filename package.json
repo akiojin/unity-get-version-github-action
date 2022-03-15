@@ -1,7 +1,7 @@
 {
   "name": "unity-get-version-github-action",
   "version": "0.1",
-  "description": "",
+  "description": "This action returns the version of Unity used in the specified project.",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/akiojin/unity-get-version-github-action#readme",
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "unity-command": "^0.1.4"
+    "@akiojin/unity-command": "^0.1.11"
   },
   "devDependencies": {
     "@types/node": "^17.0.21"

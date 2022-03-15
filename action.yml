@@ -1,5 +1,5 @@
 name: 'unity-get-version-github-action'
-description: 'このアクションは指定された Unity プロジェクトで使用している Unity のバージョンを返します。'
+description: 'This action returns the version of Unity used in the specified Unity project.'
 inputs:
   project-directory:
     description: >
