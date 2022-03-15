@@ -1,0 +1,16 @@
+name: 'unity-get-version-github-action'
+description: 'このアクションは指定された Unity プロジェクトで使用している Unity のバージョンを返します。'
+inputs:
+  project-directory:
+    description: >
+      Open the project at the given path. If the pathname contains spaces, enclose it in quotes.
+    required: true
+outputs:
+  version:
+    description: 'Unity Version'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+branding:
+  icon: "download"
+  color: "orange"
