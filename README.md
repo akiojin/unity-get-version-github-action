@@ -2,6 +2,7 @@
 ![Test][0]
 
 This action returns the version of Unity used in the specified project.
+This action is used, for example, to obtain the version to be used when installing Unity.
 
 ## Usage
 ### Simple usage
