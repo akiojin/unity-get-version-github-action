@@ -1,5 +1,6 @@
 # unity-get-version-github-action
 ![Test][0]
+
 This action returns the version of Unity used in the specified project.
 
 ## Usage
