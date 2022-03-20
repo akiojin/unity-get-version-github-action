@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   Test:
@@ -15,3 +12,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - uses: ./
+        id: unity-get-version
+        with:
+          project-directory: ${{ github.workspace }}/unity
+      - name: echo Unity version
+        env:
+          VERSION: ${{ steps.unity-get-version.outputs.version }}
+        run: |
+          echo $VERSION
