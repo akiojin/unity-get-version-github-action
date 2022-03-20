@@ -1,4 +1,5 @@
 # unity-get-version-github-action
+![Test][0]
 This action returns the version of Unity used in the specified project.
 
 ## Usage
@@ -9,8 +10,11 @@ This action returns the version of Unity used in the specified project.
   with:
     project-directory: <Unity project path>
 
-- run: |
-  echo ${{ steps.unity-get-version.outputs.version }}
+- name: echo Unity version
+  env:
+    VERSION: ${{ steps.unity-get-version.outputs.version }}
+  run: |
+    echo $VERSION
 ```
 
 ## Arguments
@@ -22,4 +26,5 @@ This action returns the version of Unity used in the specified project.
 ## License
 Any contributions made under this project will be governed by the [MIT License][1].
 
-[1]: https://github.com/akiojin/setup-xcode-environemt-github-action/blob/main/LICENSE
+[0]: https://github.com/akiojin/unity-get-version-github-action/actions/workflows/Test.yml/badge.svg
+[1]: https://github.com/akiojin/unity-get-version-github-action/blob/main/LICENSE
