@@ -4,7 +4,7 @@ import { Unity } from '@akiojin/unity-command'
 async function Run()
 {
 	try {
-		const version = Unity.GetVersion(core.getInput('project-directory'))
+		const version = await Unity.GetVersion(core.getInput('project-directory'))
 		core.setOutput('version', version)
 		core.info(`Unity version: ${version}`)
 	} catch (ex: any) {

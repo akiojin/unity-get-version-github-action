@@ -1766,7 +1766,7 @@ const core = __importStar(__nccwpck_require__(127));
 const unity_command_1 = __nccwpck_require__(783);
 async function Run() {
     try {
-        const version = unity_command_1.Unity.GetVersion(core.getInput('project-directory'));
+        const version = await unity_command_1.Unity.GetVersion(core.getInput('project-directory'));
         core.setOutput('version', version);
         core.info(`Unity version: ${version}`);
     }
