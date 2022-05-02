@@ -9,6 +9,9 @@ jobs:
   Test:
     runs-on: macos-latest
     timeout-minutes: 5
+    strategy:
+      matrix:
+        dirs: ['0', '1', '2', '3']
 
     steps:
       - uses: actions/checkout@v2
@@ -16,7 +19,8 @@ jobs:
       - uses: ./
         id: unity-get-version
         with:
-          project-directory: ${{ github.workspace }}/unity
+          project-directory: ${{ github.workspace }}/unity/${{ matrix.dirs }}
+
       - name: echo Unity version
         env:
           VERSION: ${{ steps.unity-get-version.outputs.version }}
