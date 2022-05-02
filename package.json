@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/akiojin/unity-get-version-github-action.git"
   },
-  "keywords": [],
+  "keywords": [
+      "unity"
+  ],
   "author": "akiojin",
   "license": "MIT",
   "bugs": {
