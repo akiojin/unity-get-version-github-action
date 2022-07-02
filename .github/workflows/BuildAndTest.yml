@@ -25,6 +25,7 @@ jobs:
 
   Test:
     runs-on: ubuntu-latest
+    needs: Build
     timeout-minutes: 5
     strategy:
       matrix:
