@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-node@v2
         with:
@@ -31,7 +31,7 @@ jobs:
         dirs: ['0', '1', '2', '3']
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: ./
         id: unity-get-version
