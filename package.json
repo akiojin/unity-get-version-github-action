@@ -1,6 +1,6 @@
 {
   "name": "unity-get-version-github-action",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "This action returns the version of Unity used in the specified project.",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/akiojin/unity-get-version-github-action.git"
   },
   "keywords": [
-      "unity"
+    "unity"
   ],
   "author": "akiojin",
   "license": "MIT",
