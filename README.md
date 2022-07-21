@@ -10,7 +10,7 @@ This action is used, for example, to obtain the version to be used when installi
 ### Simple usage
 
 ```yml
-- uses: akiojin/unity-get-version-github-action@v1.1.0
+- uses: akiojin/unity-get-version-github-action@v1.1.4
   id: unity-get-version
   with:
     project-directory: <Unity project path>
