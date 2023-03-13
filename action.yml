@@ -1,4 +1,4 @@
-name: 'unity-get-version-github-action'
+name: 'Get Unity project file version'
 description: 'This action returns the version of Unity used in the specified Unity project.'
 inputs:
   project-directory:
