@@ -1,0 +1,35 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        dirs:
+          - Unity2021
+          - Unity2022
+          - Unity2023
+          - Unity6
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./
+        id: unity-get-version
+        with:
+          project-directory: ${{ github.workspace }}/unity/${{ matrix.dirs }}
+
+      - name: echo Unity version
+        env:
+          VERSION: ${{ steps.unity-get-version.outputs.version }}
+        run: |
+          echo $VERSION
