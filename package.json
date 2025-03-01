@@ -22,7 +22,7 @@
   "homepage": "https://github.com/akiojin/unity-get-version-github-action#readme",
   "devDependencies": {
     "@actions/core": "1.11.1",
-    "@akiojin/unity-command": "1.4.3",
+    "@akiojin/unity-command": "1.4.4",
     "@types/node": "22.13.0",
     "@vercel/ncc": "0.38.3",
     "rimraf": "6.0.1",
