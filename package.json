@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/akiojin/unity-get-version-github-action#readme",
   "devDependencies": {
-    "@actions/core": "1.11.1",
+    "@actions/core": "3.0.0",
     "@akiojin/unity-command": "1.4.3",
     "@types/node": "22.15.29",
     "@vercel/ncc": "0.38.4",
